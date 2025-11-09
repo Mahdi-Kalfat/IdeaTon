@@ -35,19 +35,12 @@
     <header class="bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg">
         <div class="container mx-auto px-4 py-6">
             <div class="flex items-center justify-between">
-                <div class="flex items-center justify-between w-full">
-                    <div class="flex items-center space-x-3">
-                        <i class="fas fa-lightbulb text-4xl"></i>
-                        <div>
-                            <h1 class="text-3xl font-bold">Light Detection System</h1>
-                            <p class="text-blue-100 text-sm">AI-Powered Light Status Analyzer</p>
-                        </div>
+                <div class="flex items-center space-x-3">
+                    <i class="fas fa-lightbulb text-4xl"></i>
+                    <div>
+                        <h1 class="text-3xl font-bold">Light Detection System</h1>
+                        <p class="text-blue-100 text-sm">AI-Powered Light Status Analyzer</p>
                     </div>
-                    <button onclick="openWeatherControl()" 
-                            class="bg-white text-blue-600 px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors font-semibold flex items-center space-x-2">
-                        <i class="fas fa-temperature-half"></i>
-                        <span>Climate Control</span>
-                    </button>
                 </div>
                 <div id="stats" class="hidden md:flex space-x-6 text-sm">
                     <div class="text-center">
@@ -66,6 +59,18 @@
             </div>
         </div>
     </header>
+
+    <!-- Climate Control Button Bar -->
+    <div class="bg-white border-b shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <button onclick="openWeatherControl()" 
+                    class="bg-gradient-to-r from-blue-600 to-blue-700 text-white px-6 py-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all font-semibold flex items-center space-x-2 shadow-md hover:shadow-lg">
+                <i class="fas fa-temperature-half text-xl"></i>
+                <span>Climate Control</span>
+                <i class="fas fa-chevron-right ml-2 text-sm"></i>
+            </button>
+        </div>
+    </div>
 
     <main class="container mx-auto px-4 py-8">
         <!-- Upload Section -->
